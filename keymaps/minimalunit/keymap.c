@@ -21,6 +21,7 @@ extern midi_config_t midi_config;
 
 #define MIDI_CC_OFF 0
 #define MIDI_CC_ON  127
+#define MIDI_CC_LOW 60
 
 enum custom_keycodes {
     MIDI_CC85 = SAFE_RANGE,
@@ -34,7 +35,63 @@ enum custom_keycodes {
     MIDI_CC18,
     MIDI_CC19,
     MIDI_CC20,
-    MIDI_CC21
+    MIDI_CC21,
+    MIDI_CC46,
+    MIDI_CC47,
+    MIDI_CC48,
+    MIDI_CC49,
+    MIDI_CC50,
+    MIDI_CC51,
+    MIDI_CC52,
+    MIDI_CC53,
+    MIDI_CC54,
+    MIDI_CC55,
+    MIDI_CC56,
+    MIDI_CC57,
+    MIDI_CC58,
+    MIDI_CC59,
+    MIDI_CC60,
+    MIDI_CC61,
+    MIDI_CC62,
+    MIDI_CC63,
+    MIDI_CC64,
+    MIDI_CC65,
+    MIDI_CC66,
+    MIDI_CC67,
+    MIDI_CC68,
+    MIDI_CC69,
+    MIDI_CC70,
+    MIDI_CC71,
+    MIDI_CC72,
+    MIDI_CC73,
+    MIDI_CC46_LOW,
+    MIDI_CC47_LOW,
+    MIDI_CC48_LOW,
+    MIDI_CC49_LOW,
+    MIDI_CC50_LOW,
+    MIDI_CC51_LOW,
+    MIDI_CC52_LOW,
+    MIDI_CC53_LOW,
+    MIDI_CC54_LOW,
+    MIDI_CC55_LOW,
+    MIDI_CC56_LOW,
+    MIDI_CC57_LOW,
+    MIDI_CC58_LOW,
+    MIDI_CC59_LOW,
+    MIDI_CC60_LOW,
+    MIDI_CC61_LOW,
+    MIDI_CC62_LOW,
+    MIDI_CC63_LOW,
+    MIDI_CC64_LOW,
+    MIDI_CC65_LOW,
+    MIDI_CC66_LOW,
+    MIDI_CC67_LOW,
+    MIDI_CC68_LOW,
+    MIDI_CC69_LOW,
+    MIDI_CC70_LOW,
+    MIDI_CC71_LOW,
+    MIDI_CC72_LOW,
+    MIDI_CC73_LOW,
 };
 
 void my_init(void){
@@ -144,7 +201,422 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
             return true;
             break;
-
+        case MIDI_CC46:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 46, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 46, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC47:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 47, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 47, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC48:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 48, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 48, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC49:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 49, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 49, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC50:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 50, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 50, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC51:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 51, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 51, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC52:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 52, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 52, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC53:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 53, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 53, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC54:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 54, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 54, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC55:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 55, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 55, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC56:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 56, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 56, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC57:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 57, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 57, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC58:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 58, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 58, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC59:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 59, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 59, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC60:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 60, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 60, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC61:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 61, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 61, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC62:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 62, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 62, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC63:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 63, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 63, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC64:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 64, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 64, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC65:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 65, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 65, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC66:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 66, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 66, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC67:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 67, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 67, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC68:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 68, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 68, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC69:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 69, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 69, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC70:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 70, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 70, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC71:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 71, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 71, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC72:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 72, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 72, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC73:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 73, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 73, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC46_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 46, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 46, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC47_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 47, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 47, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC48_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 48, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 48, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC49_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 49, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 49, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC50_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 50, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 50, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC51_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 51, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 51, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC52_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 52, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 52, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC53_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 53, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 53, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC54_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 54, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 54, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC55_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 55, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 55, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC56_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 56, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 56, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC57_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 57, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 57, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC58_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 58, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 58, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC59_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 59, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 59, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC60_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 60, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 60, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC61_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 61, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 61, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC62_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 62, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 62, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC63_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 63, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 63, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC64_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 64, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 64, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC65_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 65, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 65, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC66_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 66, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 66, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC67_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 67, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 67, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC68_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 68, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 68, MIDI_CC_OFF);
+            }
+            return true;
+            break;
+        case MIDI_CC69_LOW:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, midi_config.channel, 69, MIDI_CC_LOW);
+            } else {
+                midi_send_cc(&midi_device, midi_config.channel, 69, MIDI_CC_OFF);
+            }
+            return true;
+            break;
     }
     return true;
 };
@@ -154,6 +626,8 @@ enum layers {
   _QWERTY,
   _MIDI,
   _DRUM,
+  _CNTRL,
+  _LOWCNTRL,
   _ABLETON,
   _LOWER,
   _RAISE,
@@ -163,6 +637,7 @@ enum layers {
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
 #define ABLETON MO(_ABLETON)
+#define LOWCNTRL MO(_LOWCNTRL)
 
 void set_color_qwerty(int r, int g, int b){
 	rgb_matrix_set_color(0,  r, g, b);
@@ -266,7 +741,38 @@ void set_color_select_track(int r, int g, int b){
 	rgb_matrix_set_color(21,  r, g, b);
 }
 
+void set_color_cntrl_first_row(int r, int g, int b){
+	rgb_matrix_set_color(0,  r, g, b);
+	rgb_matrix_set_color(1,  r, g, b);
+	rgb_matrix_set_color(2,  r, g, b);
+	rgb_matrix_set_color(3,  r, g, b);
+	rgb_matrix_set_color(4,  r, g, b);
+	rgb_matrix_set_color(5,  r, g, b);
+	rgb_matrix_set_color(6,  r, g, b);
+	rgb_matrix_set_color(7,  r, g, b);
+}
 
+void set_color_cntrl_second_row(int r, int g, int b){
+	rgb_matrix_set_color(12,  r, g, b);
+	rgb_matrix_set_color(13,  r, g, b);
+	rgb_matrix_set_color(14,  r, g, b);
+	rgb_matrix_set_color(15,  r, g, b);
+	rgb_matrix_set_color(16,  r, g, b);
+	rgb_matrix_set_color(17,  r, g, b);
+	rgb_matrix_set_color(18,  r, g, b);
+	rgb_matrix_set_color(19,  r, g, b);
+}
+
+void set_color_cntrl_third_row(int r, int g, int b){
+	rgb_matrix_set_color(24,  r, g, b);
+	rgb_matrix_set_color(25,  r, g, b);
+	rgb_matrix_set_color(26,  r, g, b);
+	rgb_matrix_set_color(27,  r, g, b);
+	rgb_matrix_set_color(28,  r, g, b);
+	rgb_matrix_set_color(29,  r, g, b);
+	rgb_matrix_set_color(30,  r, g, b);
+	rgb_matrix_set_color(31,  r, g, b);
+}
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         switch (get_highest_layer(layer_state)) {
@@ -290,6 +796,25 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 		    set_color_control_keys(0, 0, 255);
 		    rgb_matrix_set_color(39, 192, 192, 192);
 			set_color_drum(255, 128, 0);
+			break;
+		case _CNTRL:
+		    rgb_matrix_set_color_all(0, 0, 0);
+		    rgb_matrix_set_color(39, 192, 192, 192);
+		    set_color_cntrl_first_row(0, 0, 255);
+		    set_color_cntrl_second_row(0, 100, 255);
+		    set_color_cntrl_third_row(200, 200, 200);
+		    rgb_matrix_set_color(10, 150, 0, 0);
+		    rgb_matrix_set_color(11, 0, 150, 0);
+		    rgb_matrix_set_color(22, 0, 0, 150);
+		    rgb_matrix_set_color(23, 150, 150, 150);
+		    rgb_matrix_set_color(46, 255, 255, 255);
+			break;
+		case _LOWCNTRL:
+		    rgb_matrix_set_color_all(0, 0, 0);
+		    rgb_matrix_set_color(39, 192, 192, 192);
+		    set_color_cntrl_first_row(100, 0, 255);
+		    set_color_cntrl_second_row(100, 100, 255);
+		    set_color_cntrl_third_row(200, 200, 0);
 			break;
 		case _ABLETON:
 		    rgb_matrix_set_color_all(0, 0, 0);
@@ -324,6 +849,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 			rgb_matrix_set_color(11, 150, 150, 150);
 			rgb_matrix_set_color(25, 102, 102, 0);
 			rgb_matrix_set_color(26, 255, 128, 0);
+			rgb_matrix_set_color(27, 0, 100, 255);
 			break;
 	}
 	return false;
@@ -384,6 +910,42 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______, _______, _______, _______, MI_Gs1, MI_A1, MI_As1, MI_B1,
     _______, _______, _______, _______, _______, _______, _______, _______, MI_E1, MI_F1, MI_Fs1, MI_G1,
     TG(_DRUM), MI_OCTD, MI_OCTU, ABLETON, _______, _______, _______, MI_C1,  MI_Cs1, MI_D1, MI_Ds1
+),
+
+/* CNTRL
+ * ,-----------------------------------------------------------------------------------.
+ * |  46  |  47  |  48  |  49  |  50  |  51  |  52  |  53  |      |      |  70  |  71  |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |  54  |  55  |  56  |  57  |  58  |  59  |  60  |  61  |      |      |  72  |  73  |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |  62  |  63  |  64  |  65  |  66  |  67  |  68  |  69  |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | CNTRL|      |      |  ABL |      |             |      |      |      |      |  LOW |
+ * `-----------------------------------------------------------------------------------'
+ */
+[_CNTRL] = LAYOUT_planck_mit(
+    MIDI_CC46, MIDI_CC47, MIDI_CC48, MIDI_CC49, MIDI_CC50, MIDI_CC51, MIDI_CC52, MIDI_CC53, _______, _______, MIDI_CC70, MIDI_CC71,
+    MIDI_CC54, MIDI_CC55, MIDI_CC56, MIDI_CC57, MIDI_CC58, MIDI_CC59, MIDI_CC60, MIDI_CC61, _______, _______, MIDI_CC72, MIDI_CC73,
+    MIDI_CC62, MIDI_CC63, MIDI_CC64, MIDI_CC65, MIDI_CC66, MIDI_CC67, MIDI_CC68, MIDI_CC69, _______, _______, _______, _______,
+    TG(_CNTRL), _______, _______, ABLETON, _______, _______, _______, _______,  _______, _______, LOWCNTRL
+),
+
+/* LOW CNTRL (sending 60 instead of 127)
+ * ,-----------------------------------------------------------------------------------.
+ * |  46  |  47  |  48  |  49  |  50  |  51  |  52  |  53  |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |  54  |  55  |  56  |  57  |  58  |  59  |  60  |  61  |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |  62  |  63  |  64  |  65  |  66  |  67  |  68  |  69  |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      |             |      |      |      |      |      |
+ * `-----------------------------------------------------------------------------------'
+ */
+[_LOWCNTRL] = LAYOUT_planck_mit(
+    MIDI_CC46_LOW, MIDI_CC47_LOW, MIDI_CC48_LOW, MIDI_CC49_LOW, MIDI_CC50_LOW, MIDI_CC51_LOW, MIDI_CC52_LOW, MIDI_CC53_LOW, _______, _______, _______, _______,
+    MIDI_CC54_LOW, MIDI_CC55_LOW, MIDI_CC56_LOW, MIDI_CC57_LOW, MIDI_CC58_LOW, MIDI_CC59_LOW, MIDI_CC60_LOW, MIDI_CC61_LOW, _______, _______, _______, _______,
+    MIDI_CC62_LOW, MIDI_CC63_LOW, MIDI_CC64_LOW, MIDI_CC65_LOW, MIDI_CC66_LOW, MIDI_CC67_LOW, MIDI_CC68_LOW, MIDI_CC69_LOW, _______, _______, _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______
 ),
 
 /* Ableton commands
@@ -447,7 +1009,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |      |      |      |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | MIDI | DRUM |      |      |      |      |      |      |      |      |      |
+ * |      | MIDI | DRUM | CNTRL|      |      |      |      |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
@@ -455,7 +1017,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_ADJUST] = LAYOUT_planck_mit(
     _______, QK_BOOT,   DB_TOGG,   RGB_TOG, _______, _______, _______, _______, _______,  RGB_VAI, RGB_VAD, KC_DEL ,
     _______, _______, _______, _______, _______, _______, _______, _______,  _______,  _______, _______, _______,
-    _______, TG(_MIDI), TG(_DRUM), _______, _______, _______, _______, _______,  _______,  _______, _______, _______,
+    _______, TG(_MIDI), TG(_DRUM), TG(_CNTRL), _______, _______, _______, _______,  _______,  _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______
 )
 
